@@ -1,54 +1,74 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PROJETO FINAL FRONT END
 
-Currently, two official plugins are available:
+Estrutura de Pastas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+src/
+│
+├── assets/              # Imagens e recursos estáticos
+├── components/          # Componentes reutilizáveis (Header, Footer, ProductCard)
+├── data/                # Dados mockados
+├── pages/               # Páginas principais
+├── styles/              # Estilização customizada se necessário
+├── App.tsx              # Componente principal
+└── main.tsx             # Ponto de entrada
 
-## Expanding the ESLint configuration
+# 🛍️ DRIP STORE
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Aplicação web desenvolvida com **React + TypeScript + Material UI**, com base no projeto **Digital Store** da Digital College. O objetivo é simular uma loja online de roupas streetwear, com foco em uma interface moderna, responsiva e funcional.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎯 Objetivo do Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Este projeto visa aplicar os conceitos de React com TypeScript em um ambiente prático, desenvolvendo uma aplicação completa baseada nos seguintes requisitos:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Interface moderna e funcional inspirada em design real no Figma
+- Organização modular por páginas, componentes e dados
+- Simulação de navegação por produtos
+
+
+2. Instalação das dependências:
+
+npm install
+
+
+3. Execução do projeto:
+
+npm run dev
+
+
+4. Stack Utilizada
+
+React com TypeScript
+
+Material UI (componentes de interface)
+
+React Router DOM (navegação entre páginas)
+
+Vite (ferramenta de build e desenvolvimento)
+
+Dados mockados para simulação de produtos
+
+ 
+5. Funcionalidades:
+
+ Página Inicial com banner e chamada para ação
+
+ Página de listagem de produtos mockados
+
+ Página de visualização individual do produto
+
+ Componentes reutilizáveis (Header, Footer, ProductCard)
+
+ Navegação fluida com React Router
+
+ Layout responsivo com Material UI
+
+
+6. Créditos
+
+Baseado no projeto Digital Store da Digital College
+
+Design retirado do Figma oficial da DRIP STORE
